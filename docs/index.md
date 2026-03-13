@@ -1,16 +1,20 @@
+---
+layout: page
+---
+
 # OpenClaw Deep Dive
 
 ## 六大部分导航
 
 ```mermaid
 graph LR
-    subgraph "P1: 总览篇"
+    subgraph P1["P1: 总览篇"]
         A1[架构认知]
         A2[设计哲学]
         A1 --> A2
     end
 
-    subgraph "P2: 核心引擎篇"
+    subgraph P2["P2: 核心引擎篇"]
         B1[Agent Core]
         B2[Memory]
         B3[Tool System]
@@ -18,7 +22,7 @@ graph LR
         B3 --> B1
     end
 
-    subgraph "P3: 交互层篇"
+    subgraph P3["P3: 交互层篇"]
         C1[Channels]
         C2[Media]
         C3[LINE/iMessage]
@@ -26,7 +30,7 @@ graph LR
         C2 --> B1
     end
 
-    subgraph "P4: 基础设施篇"
+    subgraph P4["P4: 基础设施篇"]
         D1[Gateway]
         D2[Plugin SDK]
         D3[Commands]
@@ -34,7 +38,7 @@ graph LR
         D2 --> B3
     end
 
-    subgraph "P5: 工程实践篇"
+    subgraph P5["P5: 工程实践篇"]
         E1[Security]
         E2[Hooks]
         E3[Config]
@@ -43,7 +47,7 @@ graph LR
         E3 --> D1
     end
 
-    subgraph "P6: 高级专题篇"
+    subgraph P6["P6: 高级专题篇"]
         F1[Browser]
         F2[Canvas Host]
         F3[ACP]
