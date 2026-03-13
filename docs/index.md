@@ -1,0 +1,22 @@
+---
+layout: home
+hero:
+  name: OpenClaw Deep Dive
+  text: 技术深度解析文档
+  tagline: 基于源码事实的架构与实现指南
+  actions:
+    - theme: brand
+      text: 开始阅读
+      link: /architecture/overview
+    - theme: alt
+      text: GitHub
+      link: https://github.com/rainleon/openclaw-deep-dive
+
+features:
+  - title: 📖 源码驱动
+    details: 所有内容基于真实源码，附带路径引用，拒绝空泛描述
+  - title: 🏗️ 架构全景
+    details: 从 CLI 到 Gateway，从 Agent 到渠道，完整覆盖
+  - title: 🔧 实践导向
+    details: 提供可复现的阅读路径和最小化示例
+---
