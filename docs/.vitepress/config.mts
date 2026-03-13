@@ -13,7 +13,7 @@ export default withMermaid({
       { text: '首页', link: '/' },
       { text: '总览', link: '/p1-overview/architecture' },
       { text: '核心引擎', link: '/p2-core/agent' },
-      { text: '基础设施', link: '/p4-infra/gateway' },
+      { text: '基础设施', link: '/p4-infra/11-Gateway核心架构' },
       { text: 'GitHub', link: 'https://github.com/rainleon/openclaw-deep-dive' }
     ],
     sidebar: [
