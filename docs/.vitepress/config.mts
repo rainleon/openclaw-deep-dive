@@ -1,9 +1,12 @@
-import { defineConfig } from 'vitepress'
+import { withMermaid } from "vitepress-plugin-mermaid";
 
-export default defineConfig({
+export default withMermaid({
   title: 'OpenClaw Deep Dive',
   description: 'OpenClaw 技术深度解析文档',
   base: '/openclaw-deep-dive/',
+  mermaid: {
+    theme: 'default'
+  },
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },

@@ -1,7 +1,3 @@
----
-layout: page
----
-
 # OpenClaw Deep Dive
 
 ## 六大部分导航
@@ -25,14 +21,14 @@ graph LR
     subgraph P3["P3: 交互层篇"]
         C1[Channels]
         C2[Media]
-        C3[LINE/iMessage]
+        C3["LINE/iMessage"]
         C1 --> B1
         C2 --> B1
     end
 
     subgraph P4["P4: 基础设施篇"]
         D1[Gateway]
-        D2[Plugin SDK]
+        D2["Plugin SDK"]
         D3[Commands]
         D1 --> C1
         D2 --> B3
@@ -49,7 +45,7 @@ graph LR
 
     subgraph P6["P6: 高级专题篇"]
         F1[Browser]
-        F2[Canvas Host]
+        F2["Canvas Host"]
         F3[ACP]
         F1 --> B3
         F2 --> C1

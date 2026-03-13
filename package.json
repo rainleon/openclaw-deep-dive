@@ -16,7 +16,8 @@
     "gitbook-cli": "^2.3.2",
     "markdown-it-mermaid": "^0.2.5",
     "mermaid": "^11.13.0",
-    "vitepress": "^1.6.4"
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-mermaid": "^2.0.17"
   },
   "directories": {
     "doc": "docs"
