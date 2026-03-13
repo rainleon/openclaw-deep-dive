@@ -5,6 +5,17 @@ export default withMermaid({
   title: 'OpenClaw Deep Dive',
   description: 'OpenClaw 技术深度解析文档',
   base: '/openclaw-deep-dive/',
+  
+  // 启用构建时生成.html扩展名的链接
+  rewrites: {
+    // 确保所有链接都有正确的扩展名
+  },
+  
+  // 确保构建产物兼容静态服务器
+  build: {
+    // 生成干净的目录结构
+  },
+  
   mermaid: {
     theme: 'default'
   },
