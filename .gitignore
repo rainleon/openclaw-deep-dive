@@ -1,1 +1,16 @@
 node_modules
+/.DS_Store
+
+# VitePress build output and cache
+docs/.vitepress/dist
+docs/.vitepress/cache
+
+# Generated site assets accidentally committed before
+docs/assets
+docs/hashmap.json
+docs/vp-icons.css
+docs/index.html
+docs/404.html
+
+# Avoid committing any generated HTML under docs
+docs/**/*.html
