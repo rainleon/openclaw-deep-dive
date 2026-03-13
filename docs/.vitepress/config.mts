@@ -7,32 +7,81 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '架构', link: '/architecture/overview' },
+      { text: '总览', link: '/p1-overview/architecture' },
+      { text: '核心引擎', link: '/p2-core/agent' },
+      { text: '基础设施', link: '/p4-infra/gateway' },
       { text: 'GitHub', link: 'https://github.com/rainleon/openclaw-deep-dive' }
     ],
 
     sidebar: [
+      // P1: 总览篇
       {
-        text: '介绍',
+        text: '📖 P1: 总览篇',
+        collapsible: true,
+        collapsed: false,
         items: [
-          { text: '什么是 OpenClaw', link: '/intro/what-is' }
+          { text: '架构认知', link: '/p1-overview/architecture' },
+          { text: '设计哲学', link: '/p1-overview/philosophy' }
         ]
       },
+
+      // P2: 核心引擎篇
       {
-        text: '核心概念',
+        text: '⚙️ P2: 核心引擎篇',
+        collapsible: true,
+        collapsed: false,
         items: [
-          { text: '架构概览', link: '/architecture/overview' },
-          { text: 'Agent 系统', link: '/architecture/agents' },
-          { text: '工具系统', link: '/architecture/tools' },
-          { text: '模型配置', link: '/architecture/models' }
+          { text: 'Agent Core', link: '/p2-core/agent' },
+          { text: 'Memory System', link: '/p2-core/memory' },
+          { text: 'Tool System', link: '/p2-core/tools' }
         ]
       },
+
+      // P3: 交互层篇
       {
-        text: '进阶指南',
+        text: '💬 P3: 交互层篇',
+        collapsible: true,
+        collapsed: true,
         items: [
-          { text: '自定义 Skills', link: '/advanced/skills' },
-          { text: '插件开发', link: '/advanced/plugins' },
-          { text: '网关配置', link: '/advanced/gateway' }
+          { text: 'Channels 体系', link: '/p3-interaction/channels' },
+          { text: 'Media 服务', link: '/p3-interaction/media' },
+          { text: 'LINE/iMessage', link: '/p3-interaction/line-imessage' }
+        ]
+      },
+
+      // P4: 基础设施篇
+      {
+        text: '🏗️ P4: 基础设施篇',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          { text: 'Gateway 架构', link: '/p4-infra/gateway' },
+          { text: 'Plugin SDK', link: '/p4-infra/plugin-sdk' },
+          { text: 'Commands 系统', link: '/p4-infra/commands' }
+        ]
+      },
+
+      // P5: 工程实践篇
+      {
+        text: '🔧 P5: 工程实践篇',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: 'Security 安全', link: '/p5-practice/security' },
+          { text: 'Hooks 机制', link: '/p5-practice/hooks' },
+          { text: 'Config 配置', link: '/p5-practice/config' }
+        ]
+      },
+
+      // P6: 高级专题篇
+      {
+        text: '🚀 P6: 高级专题篇',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: 'Browser 自动化', link: '/p6-advanced/browser' },
+          { text: 'Canvas Host', link: '/p6-advanced/canvas' },
+          { text: 'ACP 协议', link: '/p6-advanced/acp' }
         ]
       }
     ],
@@ -43,6 +92,11 @@ export default defineConfig({
 
     search: {
       provider: 'local'
+    },
+
+    footer: {
+      message: 'Based on source code analysis',
+      copyright: 'Released under MIT License'
     }
   }
 })
