@@ -5,16 +5,7 @@ export default withMermaid({
   title: 'OpenClaw Deep Dive',
   description: 'OpenClaw 技术深度解析文档',
   base: '/openclaw-deep-dive/',
-  
-  // 启用构建时生成.html扩展名的链接
-  rewrites: {
-    // 确保所有链接都有正确的扩展名
-  },
-  
-  // 确保构建产物兼容静态服务器
-  build: {
-    // 生成干净的目录结构
-  },
+ 
   
   mermaid: {
     theme: 'default'
@@ -22,9 +13,12 @@ export default withMermaid({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '总览', link: '/p1-overview/architecture' },
+      { text: '总览', link: '/p1-overview/foreword' },
       { text: '核心引擎', link: '/p2-core/agent' },
-      { text: '基础设施', link: '/p4-infra/11-Gateway核心架构' },
+      { text: '交互层', link: '/p3-interaction/02-渠道层' },
+      { text: '基础设施', link: '/p4-infra/38-Infra基础设施层' },
+      { text: '工程实践', link: '/p5-practice/17-配置系统' },
+      { text: '高级专题', link: '/p6-advanced/canvas' },
       { text: 'GitHub', link: 'https://github.com/rainleon/openclaw-deep-dive' }
     ],
     sidebar: [
