@@ -26,9 +26,10 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+      - name: Remove lockfile for Linux install
+        run: rm -f package-lock.json
 
       - name: Install dependencies
-        run: npm i --no-audit
 
       - name: Build VitePress site
         run: npm run docs:build
